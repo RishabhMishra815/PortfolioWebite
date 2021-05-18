@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header id="home">
+        <nav class="desktop-nav">
+          <div class="logo">
+            <a href="#home">
+              <img src="images/logo.png" alt="" />
+            </a>
+          </div>
+
+          <ul>
+            <li>
+              <a href="#about-me">About Me</a>
+            </li>
+            <li>
+              <a href="#work">My Work</a>
+            </li>
+            <li>
+              <a href="#testimonials">Testimonials</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <nav class="mobile-nav">
+          <div class="logo">
+            <a href="#home">
+              <img src="images/logo.png" alt="" />
+            </a>
+          </div>
+
+          <div class="menu-btn">
+            <img src="images/menu-icon.png" alt="" />
+          </div>
+        </nav>
+
+        <div class="mobile-menu-container">
+          <ul>
+            <li>
+              <a href="#about-me">About Me</a>
+            </li>
+            <li>
+              <a href="#work">My Work</a>
+            </li>
+            <li>
+              <a href="#testimonials">Testimonials</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero-container">
+          <div class="left">
+            <p class="i-am">
+              I'm a
+            </p>
+            <h2>
+              Developer,
+            </h2>
+            <h2>
+              Designer
+            </h2>
+
+            <a href="#contact" class="btn">Contact</a>
+
+            <div class="social-icons">
+              <a href="#">
+                <img src="images/twitter-logo.png" alt="" />
+              </a>
+
+              <a href="#">
+                <img src="images/facebook-logo.png" alt="" />
+              </a>
+
+              <a href="#">
+                <img src="images/instagram-logo.png" alt="" />
+              </a>
+            </div>
+          </div>
+
+          <div class="right">
+            <img src="images/hero-image.jpg" alt="" />
+          </div>
+        </div>
+      </header>
+
+      <section id="about-me">
+        <h2>About Me</h2>
+        <div class="section-content">
+          <p>
+            I'm Rishabh Mishra from Bahraich . Currently, I'm pursing  B.Tech in Information Technology  from PSIT Kanpur .			I completed my 10+2 from Buddha Public senior secondary school also I have done my schooling from same school.
+
+My strengths are my attitude that I like to take challenges that I CAN do it, self motivated person, self disciplined I am a good team player as well as has a good ability to lead the team. I can adopt to any kind of environment. I am a quick learner.
+
+My weakness is I can not tolerate any leniency in work.
+
+          </p>
+          <p>
+            My short term goal is I want a such a platform where I can grow my career along with the organization growth.
+          </p>
+          <p>
+		  My Long term goal is I want to be a successfully Entrepreneur .
+             </p>
+        </div>
+      </section>
+
+      <section id="work">
+        <h2>My Work</h2>
+
+        <div class="section-content">
+          <div class="work-container">
+            <img src="images/project1.png" alt="" />
+            <img src="images/project2.png" alt="" />
+            <img src="images/project3.png" alt="" />
+            <img class="mobile-hide" src="images/project4.png" alt="" />
+            <img class="mobile-hide" src="images/project5.png" alt="" />
+            <img class="mobile-hide" src="images/project6.png" alt="" />
+          </div>
+          <a href="#" class="btn light">View All Projects</a>
+        </div>
+      </section>
+
+      <div id="testimonials"></div>
+
+      <section class="testimonials-section">
+        <img class="quote-icon" src="images/quote-icon.jpg" alt="" />
+        <p class="testimonial-text">
+          I'm Rishabh Mishra, Currently, I'm pursing  B.Tech in  Information Technology  from PSIT Kanpur .
+        </p>
+
+        <div class="says">
+          <img src="images/testimonial1.jpg" alt="" />
+          <h3>Rishabh Mishra</h3>
+          <p class="company-name">PSIT KANPUR</p>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Me</h2>
+
+        <div class="section-content">
+          <div class="email">
+            <img src="images/mail-icon.png" alt="" />
+            <div class="contact-text">kingrishabhmishra@gmail.com</div>
+          </div>
+
+          <div class="phone">
+            <img src="images/phone-icon.png" alt="" />
+            <div class="contact-text">+91 9984029286</div>
+          </div>
+
+          <div class="address">
+            <img src="images/address-logo.png" alt="" />
+            <div class="contact-text">
+              Bahraich , Uttar Pradesh ,India
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        This website was developed by Rishabh Mishra &copy; 2021
+      </footer>
+    </div>
+
+    <script>
+      const menuBtn = document.querySelector(".menu-btn");
+      const mobileMenuContainer = document.querySelector(
+        ".mobile-menu-container"
+      );
+      const mobileMenuItems = document.querySelectorAll(
+        ".mobile-menu-container ul li a"
+      );
+
+      menuBtn.addEventListener("click", function () {
+        mobileMenuContainer.classList.toggle("active");
+      });
+
+      mobileMenuItems.forEach((i) => {
+        i.addEventListener("click", function () {
+          mobileMenuContainer.classList.remove("active");
+        });
+      });
+    </script>
+  </body>
+</html>
